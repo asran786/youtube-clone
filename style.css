@@ -1,0 +1,697 @@
+                                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+                                body {
+                                    box-sizing: border-box;
+                                    font-family: 'Roboto', sans-serif;
+                                    transition: background-color 0.5s ease;
+                                }
+                                
+                                nav {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    height: 56px;
+                                    padding: 0 16px;
+                                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                    position: sticky;
+                                    top: 0;
+                                }
+                                
+                                .toggle {
+                                    margin-left: 15px;
+                                    width: 19%;
+                                }
+                                
+                                .toggle-btn {
+                                    font-size: 25px;
+                                }
+                                
+                                .toggle svg {
+                                    height: 21px;
+                                    margin-left: 9%;
+                                    margin-top: 2px;
+                                }
+                                
+                                .logo {
+                                    letter-spacing: -2px;
+                                    font-size: 25px;
+                                    height: 20px;
+                                    width: 90px;
+                                    padding: 18px 14px 18px 16px;
+                                    margin-left: 5px;
+                                }
+                                
+                                .yt-logo {
+                                    font-size: 28px;
+                                    color: red;
+                                }
+                                
+                                .search {
+                                    display: flex;
+                                    height: 40px;
+                                    width: 50%;
+                                }
+                                
+                                input[type="text"] {
+                                    padding: 10px;
+                                    font-size: 16px;
+                                    border: 1px solid #ccc;
+                                    border-radius: 5px 0 0 5px;
+                                    outline: none;
+                                    width: 80%;
+                                    border-bottom-left-radius: 20px;
+                                    border-top-left-radius: 20px;
+                                }
+                                
+                                .search-btn {
+                                    padding: 10px 20px;
+                                    font-size: 16px;
+                                    border: 1px solid #ccc;
+                                    border-radius: 0 5px 5px 0;
+                                    background-color: transparent;
+                                    color: #000000;
+                                    cursor: pointer;
+                                    outline: none;
+                                    border-bottom-right-radius: 20px;
+                                    border-top-right-radius: 20px;
+                                }
+                                
+                                .search-btn:hover {
+                                    background-color: #0056b3;
+                                }
+                                
+                                #micButton {
+                                    margin-left: 15px;
+                                    background-color: rgb(210, 210, 210);
+                                    border-radius: 50%;
+                                    width: 40px;
+                                }
+                                
+                                .profile-image {
+                                    border-radius: 50%;
+                                }
+                                
+                                .profile-image img {
+                                    height: 33px;
+                                    border-radius: 50%;
+                                }
+                                
+                                .profile {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    width: 170px;
+                                    margin-left: 15px;
+                                }
+                                
+                                .profile svg {
+                                    height: 25px;
+                                }
+                                
+                                .notification i {
+                                    font-size: 22px;
+                                }
+                                
+                                .all-searches {}
+                                
+                                .all-searches li {
+                                    list-style-type: none;
+                                    background-color: rgba(0, 0, 0, 0.05);
+                                    padding: 5px 15px 6px 15px;
+                                    border-radius: 5px;
+                                }
+                                
+                                .all-searches li:hover {
+                                    list-style-type: none;
+                                    background-color: #000000;
+                                    color: white;
+                                }
+                                
+                                .nav-and-card {}
+                                
+                                .side-nav {
+                                    width: 220px;
+                                    margin-left: 20px;
+                                    height: 100vh;
+                                    position: fixed;
+                                    top: 55px;
+                                    left: 0;
+                                    height: 100%;
+                                    /* Set the height to cover the entire viewport */
+                                    /* Set the width of the side navigation */
+                                    overflow-y: auto;
+                                    background-color: #fff;
+                                }
+                                
+                                .half-nav li {
+                                    list-style-type: none;
+                                }
+                                
+                                .shorts {
+                                    height: 30px;
+                                    width: 100%;
+                                }
+                                
+                                .home-short-subcription {
+                                    display: flex;
+                                    flex-direction: column;
+                                    height: 160px;
+                                    font-size: 1rem;
+                                    font-weight: 500;
+                                }
+                                
+                                .home-short-subcription li {
+                                    margin-top: 10px;
+                                    height: 40px;
+                                    padding: 8px 0px 5px 10px;
+                                }
+                                
+                                .home-short-subcription li:hover {
+                                    background-color: rgb(238, 235, 235);
+                                    border-radius: 9px;
+                                    transition: 2ms;
+                                }
+                                
+                                .you h5 {
+                                    height: 40px;
+                                    padding: 8px 0px 5px 10px;
+                                }
+                                /* .you h5:hover {
+    background-color: rgb(238, 235, 235);
+    border-radius: 9px;
+    transition: 2ms;
+} */
+                                
+                                .you-hover h5:hover {
+                                    background-color: rgb(238, 235, 235);
+                                    border-radius: 9px;
+                                    transition: 2ms;
+                                }
+                                /* .you li {
+    height: 40px;
+    padding: 8px 0px 5px 10px;
+    width: 100%;
+}
+
+.you li:hover {
+    background-color: rgb(238, 235, 235);
+    border-radius: 9px;
+    transition: 2ms;
+} */
+                                
+                                .shorts a svg {
+                                    height: 24px;
+                                    width: 1%;
+                                }
+                                
+                                .subscription a svg {
+                                    height: 24px;
+                                    width: 25%;
+                                }
+                                
+                                .you {
+                                    border-top: 1px solid rgb(210, 210, 210);
+                                }
+                                
+                                .subscribe-channnel {
+                                    border-top: 1px solid rgb(210, 210, 210);
+                                    border-bottom: 1px solid rgb(210, 210, 210);
+                                }
+                                
+                                .subscribe-channnel li {}
+                                
+                                .explore {
+                                    border-bottom: 1px solid rgb(210, 210, 210);
+                                }
+                                
+                                .more-from-yt {
+                                    border-bottom: 1px solid rgb(210, 210, 210);
+                                }
+                                
+                                .you h5 {
+                                    font-weight: 500;
+                                    font-size: 17px;
+                                    padding: 8px 0px 5px 10px;
+                                    letter-spacing: -0.2px;
+                                    height: 40px;
+                                    margin-top: 4px;
+                                    cursor: pointer;
+                                }
+                                
+                                .you i {
+                                    font-size: 14px;
+                                }
+                                
+                                .you li {
+                                    margin-top: 5px;
+                                }
+                                
+                                .subscribe-channnel h5 {
+                                    font-weight: 500;
+                                    font-size: 17px;
+                                    padding: 8px 0px 5px 10px;
+                                    letter-spacing: -0.2px;
+                                    height: 40px;
+                                    margin-top: 4px;
+                                    margin-bottom: 2px;
+                                }
+                                
+                                .subscribe-channnel h5:hover {
+                                    background-color: rgb(238, 235, 235);
+                                    border-radius: 9px;
+                                    transition: 2ms;
+                                }
+                                /* .subscribe-channnel li {
+    height: 40px;
+    padding: 8px 0px 5px 10px;
+    width: 100%;
+}
+
+.subscribe-channnel li:hover {
+    background-color: rgb(238, 235, 235);
+    border-radius: 9px;
+    transition: 2ms;
+} */
+                                
+                                .explore h5 {
+                                    font-weight: 500;
+                                    font-size: 17px;
+                                    padding: 8px 0px 5px 10px;
+                                    letter-spacing: -0.2px;
+                                    height: 40px;
+                                    margin-top: 2px;
+                                }
+                                
+                                .explore h5:hover {
+                                    background-color: rgb(238, 235, 235);
+                                    border-radius: 9px;
+                                    transition: 2ms;
+                                }
+                                /* .explore li {
+    height: 40px;
+    padding: 8px 0px 5px 10px;
+    width: 100%;
+}
+
+.explore li:hover {
+    background-color: rgb(238, 235, 235);
+    border-radius: 9px;
+    transition: 2ms;
+} */
+                                
+                                .more-from-yt h5 {
+                                    font-weight: 500;
+                                    font-size: 17px;
+                                    padding: 8px 0px 5px 10px;
+                                    letter-spacing: -0.2px;
+                                    height: 40px;
+                                    margin-top: 2px;
+                                }
+                                /* .more-from-yt li {
+    height: 40px;
+    padding: 8px 0px 5px 10px;
+    width: 100%;
+} */
+                                
+                                .more-from-yt li:hover {
+                                    background-color: rgb(238, 235, 235);
+                                    border-radius: 9px;
+                                    transition: 2ms;
+                                }
+                                /* for all list with common setting  */
+                                
+                                .common-setting li {
+                                    height: 40px;
+                                    padding: 8px 0px 5px 10px;
+                                    width: 100%;
+                                    cursor: pointer;
+                                }
+                                
+                                .common-setting-hover li:hover {
+                                    background-color: rgb(238, 235, 235);
+                                    border-radius: 9px;
+                                    transition: 2ms;
+                                }
+                                /* card section  */
+                                
+                                .all-cards {
+                                    width: 100%;
+                                    margin-left: 256px;
+                                    margin-right: 1.8%;
+                                    margin-top: 10px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    gap: 20px;
+                                }
+                                
+                                .card {
+                                    max-width: 25.5rem;
+                                    height: 200px;
+                                    width: 100%;
+                                    max-width: 500px;
+                                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                                    margin-bottom: 20px;
+                                    border-radius: 15px;
+                                }
+                                
+                                .second-line-row {
+                                    margin-top: 12%;
+                                }
+                                
+                                .img {
+                                    height: 100%;
+                                }
+                                
+                                .img iframe {
+                                    width: 100%;
+                                    height: 200px;
+                                    border-radius: 15px;
+                                }
+                                
+                                .title {
+                                    word-wrap: break-word;
+                                    width: 90%;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 2;
+                                    /* Number of lines to display */
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                
+                                .channel-name-view {
+                                    margin-left: 55px;
+                                }
+                                
+                                .title-profile img {
+                                    height: 40px;
+                                    width: 40px;
+                                }
+                                
+                                .side-nav-5 {
+                                    display: none;
+                                }
+                                
+                                .all-searches {
+                                    white-space: nowrap;
+                                    overflow-x: auto;
+                                    padding: 0;
+                                    font-size: 1rem;
+                                    display: flex;
+                                    position: sticky;
+                                    top: 56px;
+                                    justify-content: space-between;
+                                    margin-left: 16.2rem;
+                                    margin-right: 1.6rem;
+                                    font-weight: 500;
+                                    background-color: white;
+                                    padding: 15px 0 15px 0;
+                                }
+                                
+                                .all-searches li {
+                                    display: inline-block;
+                                    margin-right: 10px;
+                                    /* Add some spacing between list items */
+                                    /* Other styles for list items */
+                                }
+                                
+                                @media screen and (max-width:1076px) {
+                                    .all-searches {
+                                        display: none;
+                                    }
+                                    .home svg {
+                                        height: 40px;
+                                    }
+                                    .side-nav-5 {
+                                        margin-top: -30px !important;
+                                    }
+                                }
+                                
+                                @media screen and (max-width:1250px) {
+                                    .side-nav {
+                                        display: none;
+                                    }
+                                    .all-cards {
+                                        width: 100%;
+                                        margin-left: 120px;
+                                    }
+                                    .side-nav-5 {
+                                        display: block;
+                                        width: 10%;
+                                        margin-top: -87px;
+                                        position: fixed;
+                                    }
+                                    .side-nav-5 .home {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        margin-top: 40px;
+                                    }
+                                    .side-nav-5 .nav-5-shorts {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        margin-top: 40px;
+                                    }
+                                    .side-nav-5 .subscriptions-side-bar {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        margin-top: 50px;
+                                    }
+                                    .side-nav-5 .subscriptions-side-bar p {
+                                        margin-left: 10px;
+                                    }
+                                    .side-nav-5 .you-nav-5 {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        margin-top: 35px;
+                                    }
+                                    .all-searches {
+                                        margin-left: 8rem;
+                                        margin-right: 1.7rem;
+                                    }
+                                }
+                                
+                                @media screen and (max-width:1025px) {
+                                    .margin-third-card {
+                                        margin-top: 12%;
+                                    }
+                                    .all-searches {
+                                        display: none;
+                                    }
+                                }
+                                
+                                @media screen and (max-width:776px) {
+                                    .margin-third-card {
+                                        margin-top: 14%;
+                                    }
+                                    .card-2 {
+                                        margin-top: 14%;
+                                    }
+                                    .all-searches {
+                                        display: none;
+                                    }
+                                    .side-nav-5 {
+                                        display: block;
+                                        width: 20%;
+                                    }
+                                    .profile {
+                                        display: flex;
+                                        justify-content: space-around;
+                                        width: 150px;
+                                        margin-left: 15px;
+                                    }
+                                    .search {
+                                        width: 242px;
+                                    }
+                                    #micButton {
+                                        width: 56px;
+                                    }
+                                    .all-cards {
+                                        display: flex;
+                                        justify-content: center;
+                                        width: 100%;
+                                        margin-left: 120px;
+                                        gap: 30px;
+                                    }
+                                }
+                                
+                                @media screen and (max-width:576px) {
+                                    .side-nav-5 {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        width: 100%;
+                                        position: fixed;
+                                        bottom: 0;
+                                        background-color: white;
+                                        padding-left: 19px;
+                                        padding-right: 16px;
+                                    }
+                                    .hh:hover {
+                                        background-color: #000000;
+                                        color: white;
+                                    }
+                                    .side-nav-5 .home {
+                                        margin-top: 5px;
+                                    }
+                                    .side-nav-5 .nav-5-shorts {
+                                        margin-top: 5px;
+                                    }
+                                    .side-nav-5 .subscriptions-side-bar {
+                                        margin-top: 5px;
+                                    }
+                                    .side-nav-5 .you-nav-5 {
+                                        margin-top: 5px;
+                                    }
+                                    .card {
+                                        width: 100%;
+                                        margin-top: 20px;
+                                        margin-bottom: 100px;
+                                    }
+                                    .all-cards {
+                                        justify-content: center;
+                                        width: 100%;
+                                        margin-left: 10px;
+                                        gap: 30px;
+                                    }
+                                    .search-btn {
+                                        display: flex;
+                                        width: 100px;
+                                        margin-left: 28%;
+                                        border-radius: 40px;
+                                        padding-left: 2.5rem;
+                                        padding-top: 13px;
+                                    }
+                                    .search input {
+                                        display: none;
+                                    }
+                                    .search .mic {
+                                        display: none;
+                                    }
+                                }
+                                
+                                @media screen and (max-width:400px) {
+                                    .video-upload {
+                                        display: none;
+                                    }
+                                    .toggle svg {
+                                        display: none;
+                                    }
+                                }
+                                
+                                @media screen and (min-width: 768px) {
+                                    .card {
+                                        width: calc(50% - 20px);
+                                    }
+                                }
+                                
+                                @media screen and (min-width: 1024px) {
+                                    .card {
+                                        width: calc(33.33% - 20px);
+                                    }
+                                }
+                                
+                                nav {
+                                    background-color: white;
+                                }
+                                
+                                .img iframe {
+                                    width: 100%;
+                                    height: 200px;
+                                }
+                                
+                                .dark-mode-toggle {
+                                    position: absolute;
+                                    right: 0px;
+                                    bottom: 0px;
+                                }
+                                
+                                .dark-mode-toggle input[type="checkbox"] {
+                                    display: none;
+                                }
+                                
+                                .dark-mode-toggle label {
+                                    cursor: pointer;
+                                    display: block;
+                                    width: 50px;
+                                    height: 25px;
+                                    background: #ccc;
+                                    border-radius: 25px;
+                                    position: relative;
+                                }
+                                
+                                .dark-mode-toggle label:after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 2px;
+                                    left: 2px;
+                                    width: 21px;
+                                    height: 21px;
+                                    background: #fff;
+                                    border-radius: 50%;
+                                    transition: 0.3s;
+                                }
+                                
+                                .dark-mode-toggle input[type="checkbox"]:checked+label {
+                                    background: #333;
+                                }
+                                
+                                .dark-mode-toggle input[type="checkbox"]:checked+label:after {
+                                    left: calc(100% - 2px);
+                                    transform: translateX(-100%);
+                                }
+                                
+                                body.dark-mode {
+                                    background-color: #333333;
+                                    /* Dark background */
+                                    color: #ffffff;
+                                    /* Light text */
+                                }
+                                
+                                .all-searches.dark-mode {
+                                    background-color: #333333;
+                                    /* Dark background */
+                                    color: #ffffff;
+                                    /* Light text */
+                                }
+                                /* For WebKit (Chrome, Safari, etc.) */
+                                
+                                .side-nav.custom-scrollbar {
+                                    /* Set a fixed height and enable overflow */
+                                    height: 100vh;
+                                    overflow-y: auto;
+                                    margin-top: 5px;
+                                    padding: 0px 10px 0 10px;
+                                    /* Other styling for your side navigation */
+                                    /* Define scrollbar width and hide default scrollbar */
+                                    scrollbar-width: thin;
+                                    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
+                                }
+                                
+                                .side-nav.custom-scrollbar::-webkit-scrollbar {
+                                    width: 10px;
+                                    /* Width of the scrollbar */
+                                }
+                                
+                                .side-nav.custom-scrollbar::-webkit-scrollbar-thumb {
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    /* Color of the thumb */
+                                    border-radius: 10px;
+                                    /* Rounded corners for the thumb */
+                                }
+                                
+                                .side-nav.custom-scrollbar::-webkit-scrollbar-track {
+                                    background: rgba(0, 0, 0, 0);
+                                    /* Color of the track */
+                                }
+                                
+                                @media screen and (min-width:768px) and (max-width:776px) {
+                                    .card-2 {
+                                        margin-top: 0;
+                                    }
+                                    .card-3 {
+                                        margin-top: 12%;
+                                    }
+                                }
